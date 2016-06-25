@@ -15,9 +15,9 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.html$/, loader: 'html-loader' },
+      { test: /\.css$/, loaders: ['style-loader', 'css-loader', 'csslint-loader'] },
       { test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/ },
-      { test: /\.json$/, loader: 'json-loader' },
-      { test: /\.css$/, loaders: ['style-loader', 'css-loader', 'csslint-loader'] }
+      { test: /\.json$/, loader: 'json-loader' }
     ]
   },
   plugins: [
