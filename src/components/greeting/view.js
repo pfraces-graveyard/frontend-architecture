@@ -2,7 +2,7 @@
 
 var h = require('snabbdom/h');
 var htag = require('hyperscript-helpers')(h);
-var action = require('./action');
+var events = require('./events');
 
 var div = htag.div;
 var input = htag.input;
@@ -12,7 +12,7 @@ var view = function (state) {
   return div([
     input({
       props: { type: 'text', placeholder: 'Type your name' },
-      on: { input: action.updateName }
+      on: { input: events.name.input }
     }),
     p('Hello ' + state.name)
   ]);
