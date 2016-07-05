@@ -6,8 +6,8 @@ objectives
 
   * externalizable components
   * nestable components
-  * local css
   * css preprocessor
+  * css modules
   * html-like templates
   * event delegation
   * immutable state
@@ -23,7 +23,6 @@ references
 ### elm architecture
 
   * [elm architecture](http://guide.elm-lang.org/architecture/index.html)
-  * [elm architecture side effect examples with snabbdom and jsx](https://medium.com/@yelouafi/elm-architecture-side-effect-examples-with-snabbdom-and-jsx-3732219d9995)
 
 ### reactive programming
 
@@ -33,7 +32,16 @@ references
 ### css modules
 
   * <https://github.com/css-modules/css-modules>
+
+### css preprocessor
+
   * <http://sass-lang.com/>
+
+### sass
+
+  * <http://susy.oddbird.net/>
+  * <http://breakpoint-sass.com/>
+  * <http://eyeglass.rocks/>
 
 ### types
 
@@ -66,6 +74,7 @@ references
 ### snabbdom
 
   * [react less virtual dom with snabbdom functions everywhere](https://medium.com/@yelouafi/react-less-virtual-dom-with-snabbdom-functions-everywhere-53b672cb2fe3)
+  * [elm architecture side effect examples with snabbdom and jsx](https://medium.com/@yelouafi/elm-architecture-side-effect-examples-with-snabbdom-and-jsx-3732219d9995)
 
 ### redux-snabbdom
 
