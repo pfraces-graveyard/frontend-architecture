@@ -1,83 +1,91 @@
-frontend architecture
+Frontend Architecture
 =====================
 
-objectives
-----------
+Component-based Architecture
+----------------------------
 
-  * externalizable components
+### Isolated Components
+
+  * decoupled components
+  * externalizable/distributable components
   * nestable components
-  * css preprocessor
-  * css modules
-  * html-like templates
+
+### Styles
+
+  * local styles (through css modules)
+  * themeable styles (through preprocessor)
+
+### Templates
+
+  * html-like template syntax
+
+### Scripts
+
+  * virtual DOM based pure render: `view = state -> vtree`
+  * redux-like pure reducers: `update = (state, action) -> state`
   * event delegation
-  * immutable state
-  * `view = state -> vtree`
-  * `update = (state, action) -> state`
+
+### Developer Tools
+
+  * linter, type checks
   * hot module replacement
   * living style guide
-  * editor autocompletion
+  * editor tools: refactor, autocompletion, debugger
 
-references
-----------
+Styles
+------
 
-### elm architecture
-
-  * [elm architecture](http://guide.elm-lang.org/architecture/index.html)
-
-### reactive programming
-
-  * [introduction to reactive programming](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
-  * [cyclejs introductory videos](https://egghead.io/courses/cycle-js-fundamentals)
-
-### css modules
+### CSS modules
 
   * <https://github.com/css-modules/css-modules>
 
-### css preprocessor
+### Sass
 
   * <http://sass-lang.com/>
-
-### sass
-
   * <http://susy.oddbird.net/>
   * <http://breakpoint-sass.com/>
   * <http://eyeglass.rocks/>
 
-### types
+Scripts
+-------
 
-  * [typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-  * [es6 symbols](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
-  * <https://github.com/paldepind/union-type>
+### Snabbdom
 
-### virtual dom
-
-  * <https://github.com/Matt-Esch/virtual-dom>
   * <https://github.com/paldepind/snabbdom>
+  * [react less virtual dom with snabbdom functions everywhere](https://medium.com/@yelouafi/react-less-virtual-dom-with-snabbdom-functions-everywhere-53b672cb2fe3)
+  * [elm architecture side effect examples with snabbdom and jsx](https://medium.com/@yelouafi/elm-architecture-side-effect-examples-with-snabbdom-and-jsx-3732219d9995)
 
-### streams
-
-  * <http://staltz.com/xstream/>
-  * <https://github.com/cujojs/most>
-  * <https://github.com/paldepind/flyd>
-
-### state
+### Redux
 
   * [redux introductory videos](https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?course=getting-started-with-redux)
   * <https://facebook.github.io/immutable-js/>
 
-### frameworks
-
-  * <https://github.com/Raynos/mercury>
-  * <http://cycle.js.org/>
-  * <https://github.com/paldepind/functional-frontend-architecture>
-
-### snabbdom
-
-  * [react less virtual dom with snabbdom functions everywhere](https://medium.com/@yelouafi/react-less-virtual-dom-with-snabbdom-functions-everywhere-53b672cb2fe3)
-  * [elm architecture side effect examples with snabbdom and jsx](https://medium.com/@yelouafi/elm-architecture-side-effect-examples-with-snabbdom-and-jsx-3732219d9995)
-
-### redux-snabbdom
+### Redux + Snabbdom
 
   * [redux-snabbdom hello world example](http://blog.sarabande.jp/post/140826049718)
   * [redux-snabbdom-typescript](http://www.webpackbin.com/V1X59HYrZ)
   * <https://github.com/andyrj/snabbdom-redux-starter>
+
+Related Resources
+-----------------
+
+### TypeScript
+
+  * [typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+
+### Reactive programming
+
+  * [elm architecture](http://guide.elm-lang.org/architecture/index.html)
+  * [introduction to reactive programming](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+  * [cyclejs introductory videos](https://egghead.io/courses/cycle-js-fundamentals)
+
+### Streams
+
+  * <http://staltz.com/xstream/>
+  * <https://github.com/cujojs/most>
+
+### Frameworks
+
+  * <https://github.com/Raynos/mercury>
+  * <http://cycle.js.org/>
+  * <https://github.com/paldepind/functional-frontend-architecture>

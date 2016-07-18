@@ -1,6 +1,6 @@
 {
-  "name": "redux-snabbdom-webpack",
-  "description": "",
+  "name": "frontend-architecture",
+  "description": "frontend architecture proposal",
   "version": "0.1.0",
   "dependencies": {
     "global": "^4.3.0",
